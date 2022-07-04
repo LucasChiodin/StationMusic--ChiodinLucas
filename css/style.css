@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Tiro+Telugu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Joan&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap');
+html {
+	font-size: 62.5%;
+	min-height: 100%;
+  position: relative;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: bonder-box;
+}
+body {
+	background-image: url(../imagen/gagalage.png);	
+	background-repeat: repeat;
+	margin: 0;
+  margin-bottom: 40px;	
+}
+nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+nav img {
+	position: relative;
+	left: 40%;
+}
+.image-move {
+	position: relative;
+	left: 40%;
+
+}
+ul{
+	display: flex;
+	list-style:  none;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+		
+}
+nav ul li a{
+	color: black;
+	background-color: darkgrey;
+	text-decoration: none;
+    font-size: 2.5rem;
+}
+h1 {
+
+	color: #b90504;
+	background-color: #1D1010;
+	font-family: 'Joan', serif;
+    width: 20%;
+    margin: 0% 40%;;
+	font-size: 4rem;
+}
+p {
+ color: #990100 ;
+ background-color: grey;
+ font-family: 'Tiro Telugu', serif;
+ font-size: 2rem;
+ line-height: 3rem;
+ width: 55%;
+ height: auto;
+ margin: 10px;
+ padding: 5px;
+ border: solid 5px black;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: 40px
+    
+}
+footer p{
+	background-color: black;
+	font-family: 'Lobster', cursive;
+	font-size: 2rem;	
+	color : #e8e8e8;
+}
+footer img{
+width: 60px;
+}
+.text-center {
+    text-align: center;	
+}
+/** fin de index**/
+/*inicio de discografia*/
+.text-cd{
+      color:  #670BB5 ;
+      background-color: grey;
+      font-family: 'DM Serif Display', serif;
+      text-decoration: none;
+      font-size: 3rem;
+      line-height: 6rem;
+      border: solid 5px;
+      position: relative;
+      left: 10%;
+      width: 15%;
+}
+/*fin de discografia*/
+/*inicio de contacto*/
+
+.text-contacto {
+	color: #990100;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+	line-height: 6rem;
+	border: solid 5px;
+}
+/*fin de contacto*/
+/*inicio de promos*/
+.text-promos {
+	color: #990100;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+	line-height: 8rem;
+	border: solid 5px; 
+}
+th {
+	background-color: grey;
+}
+td {
+	background-color: grey;
+}
+h2 {
+	color: #990100 ;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+}
+
+label {
+	background-color: grey;
+	margin: 15px;
+    padding: 5px;
+    line-height: 10rem;
+    border: solid 5px black;
+}
+
+/*box modeling*/
+.box-section {
+	width: 90%;
+	height: auto;
+}
+.justify-content {
+	justify-content: center;
+}
+
+section img{
+    display: flex;
+    align-items: right;
+}
+/* GRIDS*/
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 0fr;
+}
+.grid-container2{
+	display: grid;
+	grid-template-columns:0fr;
+	margin-bottom: 30px;
+}
+#central {
+	display: flex;
+	justify-content: space-between;
+}
+/*inicio de media*/
+/*discografia*/
+@media (max-width: 800px) {
+	#central {
+		flex-direction: column;
+		grid-template-columns: auto auto;
+	}
+}
+@media (max-width: 600px) {
+	#central {
+	  flex-direction: column;
+	  grid-template-columns: 100px 100 px;	  
+	}
+	.text-center {
+    text-align: center;	
+    flex-direction: column;
+} }
+
+@media (max-width: 480px) {
+	#central {
+		flex-direction: column;
+		grid-template-columns:50px 50px;
+	}
+	.text-center {
+    text-align: center;	
+    flex-direction: column;
+}
+}
+/*fin discografia*/
+.born-this {
+	width: 35%;
+}
+.container {
+  display: grid;
+  grid-auto-columns: minmax(15rem, auto);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+.item {
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*Animaciones!*/
+.linear-gradient {
+	background-image: linear-gradient(to left,red,yellowgreen);
+}
+
+@keyframes animateDiv {
+	0%{background-image: url("../fotosAnimaciones/img1.jpg");}
+	5%{background-image: url("../fotosAnimaciones/img2.jpg");}
+	10%{background-image: url("../fotosAnimaciones/img3.jpg");}
+	15%{background-image: url("../fotosAnimaciones/img4.jpg");}
+	10%{background-image: url("../fotosAnimaciones/img5.png");}
+	15%{background-image: url("../fotosAnimaciones/img6.jpg");}	
+	60%{background-image: url("../fotosAnimaciones/img7.jpg");}
+	60%{background-image: url("../fotosAnimaciones/img8.jpg");}
+  60%{background-image: url("../fotosAnimaciones/img9.jpg");}	
+}
+article div {
+	height: 300px;
+	width: 300px;
+	animation-name: animateGaga;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+	
+	
+}
+.transform:hover {
+	transform: rotateX(45deg);
+	cursor: pointer;
+
+}
+
+@keyframes animateGaga {
+	0%{background-image: url(../imagen/portada1.jpg);}
+	5%{background-image: url(../imagen/portada2.jpg);}
+	10%{background-image: url(../imagen/portada3.jpg);}
+	15%{background-image: url(../imagen/portada4.jpg);}
+	20%{background-image: url(../imagen/portada5.jpg);}
+	25%{background-image: url(../imagen/portada6.jpg);}
+	30%{background-image: url(../imagen/portada7.jpg);}
+	40%{background-image: url(../imagen/portada8.jpg);}
+	50%{background-image: url(../imagen/portada9.jpg);}
+}
