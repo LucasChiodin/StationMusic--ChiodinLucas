@@ -7,24 +7,29 @@
 	<link rel="shortcut icon" href="../imagen/gagarawr.png">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="../css/animate.css">
-	  <nav> 
-	  	<a href="../index.html"> 
-	<img src="../imagen/gaga2.png" alt="Portada del Album Born This Way en 2011">      </a>
-	<ul class="text-center">
-		<li>  	
-		  <a href="../secciones/discografia.html">Discografía</a> 		
-		</li>  	
-		<li>  	
-		  <a href="../secciones/contacto.html">Contacto</a>
-		</li>  	
-		<li> 	
-		   <a href="../secciones/hoteles.html">Hoteles</a>	
-		</li>  	
-		<li>  	
-		  <a href="../secciones/promos.html">Promociones y Contenido</a>		
-		</li>  	
-	</ul>	  
-  </nav>	       
+	  <nav class="navbar navbar-expand-lg"> <a href="../index.html"></a>
+  	<img src="../imagen/gaga2.png" alt="Portada del Album Born This Way en 2011">      </a>
+    	<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+    	<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../secciones/promos.html">Promociones</a>
+        </li>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../secciones/discografia.html">Discografia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mover" href="../secciones/Hoteles">Hoteles</a>
+        </li>
+      </ul>
+    
+</nav>
 </head>
 <body>
 	<h1 class="text-center">Entradas y Promociones!</h1>
@@ -32,33 +37,42 @@
 	<h2>Tenemos venta libre en entradas y promociones entre hoteles y entradas, ¡no te lo pierdas!</h2>
 <fieldset class="text-promos"> 	
 	<section>
-		<table border="4px" cellpadding="6px" cellspacing="5px">
-		 <tr>
-		  <th>Entrada</th>
-          <th>Hotel</th>
-          <th>Precio</th>
-		 </tr>
-	     <tr>		
-		  <td>1er fila</td>
-		  <td>Starstruck</td>
-		  <td>$5000</td>
-	      </tr>		
-	      <tr>
-	      	<td>2da fila</td>
-			<td>Madison Square</td>
-			<td>$4500</td>
-	       </tr>				
-	       <tr>
-	        <td>3er fila</td>	
-	 		<td>Disco Heaven</td>
-			<td>$3900</td>
-	       </tr>			
-	       <tr>	
-	       	<td>4ta fila</td>
-		    <td>Fame</td>
-			<td>$3000</td>
-	       </tr>
-	    </table>
+	<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Entrada</th>
+      <th scope="col">Hotel</th>
+      <th scope="col">Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>1er fila</td>
+      <td>Starstruck</td>
+      <td>$5.000</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>2da fila</td>
+      <td>Madison Square</td>
+      <td>$4.000</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>3era fila</td>
+      <td>Disco Heaven</td>
+      <td>$3.500</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>4ta fila</td>
+      <td>The Fame</td>
+      <td>$3.000</td>
+    </tr>
+  </tbody>
+</table>
 </fieldset>
 <fieldset class="text-promos">
 	<h2>Elegí las promos que quieras!</h2>
@@ -99,5 +113,7 @@
 <script> 
 	new WOW().init();
 </script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
