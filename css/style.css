@@ -260,10 +260,13 @@ article div {
 	width: 300px;
 }
 .contact-tama {
-width: 
+font-size: 2rem; 
 }
 .backgroundcolor {
 	border: solid;
 	background-color: grey;
 	width: 45%;
+}
+.gagaport {
+	width: 150px;
 }
