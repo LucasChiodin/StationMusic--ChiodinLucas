@@ -88,6 +88,7 @@ width: 60px;
 .text-center {
     text-align: center;	
 }
+
 /** fin de index**/
 /*inicio de discografia*/
 .text-cd{
@@ -254,4 +255,15 @@ article div {
 	30%{background-image: url(../imagen/portada7.jpg);}
 	40%{background-image: url(../imagen/portada8.jpg);}
 	50%{background-image: url(../imagen/portada9.jpg);}
+}
+.icon {
+	width: 300px;
+}
+.contact-tama {
+width: 
+}
+.backgroundcolor {
+	border: solid;
+	background-color: grey;
+	width: 45%;
 }
